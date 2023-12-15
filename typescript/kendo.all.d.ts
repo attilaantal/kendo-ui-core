@@ -445,6 +445,41 @@ declare namespace kendo {
 
 }
 
+declare namespace kendo.chat{
+    class ChatMessageBox extends  kendo.Class {
+        init?(options: any): void;
+        exec?(): void;
+        styles?(options: any): void;
+    }
+
+    class ChatToolBar extends  kendo.Class {
+        init?(options: any): void;
+        exec?(): void;
+        styles?(options: any): void;
+    }
+
+    class ChatView extends  kendo.Class {
+        init?(options: any): void;
+        exec?(): void;
+        styles?(options: any): void;
+    }
+
+    class Component extends  kendo.Class {
+        init?(options: any): void;
+        exec?(): void;
+    }
+
+    interface Templates {
+       heroCard?(): void;
+       message?(): void;
+    }
+
+    function getComponent(componentName: string): void;
+    function getTemplate(templateName: string): kendo.chat.Templates | string;
+    function registerComponent(componentName: string, component: kendo.chat.Component): void;
+    function registerTemplate(templateName: string, template: string | Function): void;
+}
+
 declare namespace kendo.effects {
     function enable(): void;
     function disable(): void;
@@ -2847,12 +2882,15 @@ declare namespace kendo.ui {
         constructor(element: Element, options?: ChatOptions);
 
 
+        clearUserTypingIndicator(sender: any): void;
         getUser(): any;
         postMessage(message: string): void;
+        removeTypingIndicator(): void;
         renderAttachments(options: any, sender: any): void;
         renderMessage(message: any, sender: any): void;
         renderSuggestedActions(suggestedActions: any): void;
-
+        renderUserTypingIndicator(sender: any): void;
+        toggleToolbar(skipEffects: boolean): void;
     }
 
     interface ChatMessages {
