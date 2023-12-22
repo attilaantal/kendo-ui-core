@@ -4880,6 +4880,11 @@ declare namespace kendo.ui {
         serialization?: string|Function | undefined;
     }
 
+    interface EditorNonSplittableTagsOnPaste {
+        tag?: string | undefined;
+        unwrap?: boolean | undefined;
+    }
+
     interface EditorMessages {
         auto?: string | undefined;
         accessibilityTab?: string | undefined;
@@ -5085,6 +5090,7 @@ declare namespace kendo.ui {
         imageBrowser?: EditorImageBrowser | undefined;
         fileBrowser?: EditorFileBrowser | undefined;
         navigateOnTab?: boolean | undefined;
+        nonSplittableTagsOnPaste?: string[] | EditorNonSplittableTagsOnPaste[] | undefined;
         change?(e: EditorEvent): void;
         execute?(e: EditorExecuteEvent): void;
         keydown?(e: EditorEvent): void;

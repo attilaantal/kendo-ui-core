@@ -49,7 +49,6 @@ The `immutables.serialization` configuration option accepts the following parame
                 ],
                 immutables: {
                     serialization: "<div></div>"
-                    }
                 }
             });
         </script>
@@ -70,7 +69,6 @@ The `immutables.serialization` configuration option accepts the following parame
                 ],
                 immutables: {
                     serialization: "<#= data.nodeName # data=\"immutable-element\"></#= data.nodeName #>"
-                    }
                 }
             });
         </script>
@@ -93,7 +91,6 @@ The `immutables.serialization` configuration option accepts the following parame
                     serialization: function(node) {
                         var tagName = node.tagName;
                         return "<" + tagName + ">" + "</" + tagName + ">";
-                        }
                     }
                 }
             });
