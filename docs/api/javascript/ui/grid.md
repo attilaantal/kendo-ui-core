@@ -9418,8 +9418,9 @@ When set to true, visually hidden elements that match by the filter option crite
 
 Sets a value controlling size of the component. Can also be set to the following string values:
 
-- "small"
-- "medium"
+- `"small"`
+- `"medium"`
+- `"large"`
 
 #### Example
 
