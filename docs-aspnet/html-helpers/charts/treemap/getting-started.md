@@ -338,7 +338,7 @@ You can continue experimenting with the code sample above by running it in the T
 {% endif %}
 
 ## Next Steps
-* [Use the TreeMap in Razor Pages]({% slug razorpages_treemap_aspnetcore %})
+* [Use the TreeMap in Razor Pages](https://docs.telerik.com/aspnet-core/html-helpers/charts/treemap/razor-pages)
 
 ## See Also
 * [Using the API of the Map for {{ site.framework }} (Demo)](https://demos.telerik.com/{{ site.platform }}/treemap/api)
