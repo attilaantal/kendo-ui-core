@@ -17,7 +17,7 @@ For a live example, visit the [Appearance Demo of the Chip](https://demos.teleri
 The Kendo UI Chip supports the following styling options:
 
 - [`size`](#size)—Configures the overall size of the component.
-- [`itemSize`](#itemSize)—Configures the size of the Chip items.
+- [`itemSize`](#itemsize)—Configures the size of the Chip items.
 - [`themeColor`](#themecolor)—Configures what color will be applied to the component.
 - [`fillMode`](#fillmode)—Configures how the color is applied to the component.
 - [`rounded`](#rounded)—Configures the border radius of the component.
